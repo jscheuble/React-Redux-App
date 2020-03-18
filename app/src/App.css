@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #12006b;
+}
+
+.App {
+  text-align: center;
+}
+
+header a {
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-img {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: 5rem;
+  color: #fff;
+}
+
+h2,
+h3 {
+  letter-spacing: 3px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.fetching {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.name {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.drink-img {
+  margin-bottom: 3%;
+  width: 50%;
+}
+
+.cocktail-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dropdown {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+label {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0.5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
