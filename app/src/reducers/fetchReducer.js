@@ -7,8 +7,7 @@ import {
 const initialState = {
   data: [],
   error: "",
-  isFetching: false,
-  id: 0
+  isFetching: false
 };
 
 export default function reducer(state = initialState, action) {
