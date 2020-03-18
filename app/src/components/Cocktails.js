@@ -26,19 +26,21 @@ const Cocktails = () => {
 
   return (
     <div>
-      <h3>{query.toUpperCase()}</h3>
       <form>
-        <select className="dropdown" onChange={handleChange}>
-          <option value="tequila">Tequila</option>
-          <option value="rum">Rum</option>
-          <option value="gin">Gin</option>
-          <option value="vodka">Vodka</option>
-          <option value="whiskey">Whiskey</option>
-          <option value="scotch">Scotch</option>
-          <option value="brandy">Brandy</option>
-        </select>
+        <label>
+          Choose an option....
+          <select className="dropdown" onChange={handleChange}>
+            <option value="tequila">Tequila</option>
+            <option value="rum">Rum</option>
+            <option value="gin">Gin</option>
+            <option value="vodka">Vodka</option>
+            <option value="whiskey">Whiskey</option>
+            <option value="scotch">Scotch</option>
+            <option value="brandy">Brandy</option>
+          </select>
+        </label>
       </form>
-
+      <h3>{query.toUpperCase()}</h3>
       {drinks.length > 1 && <CocktailList drinks={drinks} />}
     </div>
   );

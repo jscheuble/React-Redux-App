@@ -30,7 +30,8 @@ h1 {
   color: #fff;
 }
 
-h2 {
+h2,
+h3 {
   letter-spacing: 3px;
   font-size: 3rem;
   color: #fff;
@@ -56,4 +57,20 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.dropdown {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+label {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0.5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
