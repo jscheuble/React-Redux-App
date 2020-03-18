@@ -3,7 +3,9 @@ import { connect } from "react-redux";
 
 import { getData } from "../actions/fetchActions";
 
-const Forecast = props => {
+import CocktailList from "./CocktailList";
+
+const Random = props => {
   const fetchData = e => {
     e.preventDefault();
     props.getData();
@@ -11,17 +13,11 @@ const Forecast = props => {
 
   return (
     <div>
-      <h2>welcome</h2>
-      <button onClick={fetchData}>Fetch data</button>
+      <h2>Need ideas? Click to view a random drink.</h2>
+      <button onClick={fetchData}>random drink</button>
+
       {props.isFetching && <p>Fetching...</p>}
-      {props.data.map(drink => {
-        return (
-          <>
-            <p key={drink.idDrink}>{drink.strDrink}</p>
-            <img src={drink.strDrinkThumb} alt="fancy cocktail" />
-          </>
-        );
-      })}
+      <CocktailList drinks={props.data} />
     </div>
   );
 };
@@ -34,4 +30,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, { getData })(Forecast);
+export default connect(mapStateToProps, { getData })(Random);

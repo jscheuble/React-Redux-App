@@ -7,7 +7,8 @@ import {
 const initialState = {
   data: [],
   error: "",
-  isFetching: false
+  isFetching: false,
+  id: 0
 };
 
 export default function reducer(state = initialState, action) {
@@ -15,6 +16,7 @@ export default function reducer(state = initialState, action) {
     case FETCH_DATA_START:
       return {
         ...state,
+        data: [],
         isFetching: true,
         error: ""
       };

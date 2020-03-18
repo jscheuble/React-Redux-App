@@ -7,7 +7,7 @@ export const FETCH_DATA_FAILURE = "FETCH_DATA_FAILURE";
 export const getData = () => dispatch => {
   dispatch({ type: FETCH_DATA_START });
   axios
-    .get("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=gin")
+    .get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
     .then(res => {
       console.log(res.data.drinks);
       dispatch({ type: FETCH_DATA_SUCCESS, payload: res.data.drinks });
